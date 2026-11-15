@@ -7,7 +7,7 @@ body {
     flex-direction: column;
     background:
         linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
-        url("Estudante_do_3º_AnO-%202025-2026.jpeg") center / cover no-repeat;
+        url("Img2.jpeg") center / cover no-repeat;
 }
 h1 {
     color: #ad0b0b;
