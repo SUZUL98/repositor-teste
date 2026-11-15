@@ -2,12 +2,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; 
-
+    flex-direction: column;
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)),
+        url("Estudante_do_3º%20Ano-%202025-2026.jpeg") center / cover no-repeat;
 }
 h1 {
     color: #ad0b0b;
