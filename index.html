@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudante do 3º Ano</title>
+    <title>Estudante do 4º Ano</title>
     <link rel="stylesheet" href="Estilo.css">
 </head>
 <body>
+    <main class="cartao">
         <h1>Emilio Madureira</h1>
-
-    <p>
-        Estudar Git e GitHub é fundamental
-        para o desenvolvimento de software moderno.
-    </p>
-    <h3>Carregar Fotografia</h3>
-    <input type="file" id="foto" accept="image/*">
-    <br><br>
-    <img id="visualizar" width="300">
-    <br><br>
-    <h3>Nome completo</h3>
-    <input type="text" id="nome"
-           placeholder="Digite o seu nome completo">
-    <br><br>
-    <button onclick="mostrar()">
-        Mostrar nome    
-    </button>
-    <h2 id="resultado"></h2>
+        <p>
+            Estudar Git e GitHub é fundamental
+            para o desenvolvimento de software moderno.
+        </p>
+        <label class="rotulo" for="foto">Carregar fotografia</label>
+        <input type="file" id="foto" accept="image/*">
+        <img id="visualizar" width="300" alt="Pré-visualização da fotografia">
+        <label class="rotulo" for="nome">Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite o seu nome completo">
+        <button onclick="mostrar()">Mostrar nome</button>
+        <h2 id="resultado"></h2>
+    </main>
     <script>
         const foto = document.getElementById("foto");
         foto.onchange = function() {
