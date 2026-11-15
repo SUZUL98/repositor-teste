@@ -5,10 +5,12 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
 
 }
 h1 {
-    color: #000;
+    color: #ad0b0b;
     font-size: 2rem;
     text-align: center;
     margin-top: 20px;
