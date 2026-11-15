@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+}
+p {
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+}   
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}

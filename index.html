@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 01</title>
+    <link rel="stylesheet" href="Estilo.css">
 </head>
 <body>
-        <h1>
-            Emilio Madureira
-        </h1>
-        <p>
-            Estudar Git e GitHub é fundamental para o desenvolvimento de software moderno.      
-        </p>
-        <button>
-            Clique aqui
-        </button>
+        <h1>Emilio Madureira</h1>
+
+    <p>
+        Estudar Git e GitHub é fundamental
+        para o desenvolvimento de software moderno.
+    </p>
+    <h3>Carregar Fotografia</h3>
+    <img src="../Estudante_do_3º Ano-2025-2026.jpg" width="200">
+    <input type="file" id="foto" accept="image/*">
+    <br><br>
+    <img id="visualizar" width="200">
+    <br><br>
+    <h3>Nome completo</h3>
+    <input type="text" id="nome"
+           placeholder="Digite o seu nome completo">
+    <br><br>
+    <button onclick="mostrar()">
+        Clique aqui
+    </button>
+    <h2 id="resultado"></h2>
+    <script>
+        const foto = document.getElementById("foto");
+        foto.onchange = function() {
+            const ficheiro = foto.files[0];
+            if (ficheiro) {
+                document.getElementById("visualizar").src =
+                    URL.createObjectURL(ficheiro);
+            }
+        };
+        function mostrar() {
+            const nome = document.getElementById("nome").value;
+            document.getElementById("resultado").innerHTML =
+                "Bem-vindo(a), " + nome + "!";
+        }
+    </script>
 
 </body>
 </html>
